@@ -93,7 +93,7 @@ def find(file, substring:str):
         product_list =[]
         line_num = 0
         file =  open(file, 'r+')
-        line = file.readline()
+        line = file.readline(5_000_000)
         for line in file:
             line_num +=1
             if substring in line:

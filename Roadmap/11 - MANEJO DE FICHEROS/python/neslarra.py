@@ -80,7 +80,7 @@ fichero = open("reto_11.txt", "r+")
 num_linea = 0
 data = ""
 while True:
-    linea = fichero.readline()
+    linea = fichero.readline(5_000_000)
     if not linea:
         break
     if num_linea:
@@ -124,7 +124,7 @@ with open('reto_11.txt', 'w') as fichero:
 
 with open('reto_11.txt', 'r') as fichero:
     while True:
-        linea = fichero.readline()
+        linea = fichero.readline(5_000_000)
         if linea:
             print(f"{linea}", end="")
         else:
@@ -206,7 +206,7 @@ def leer_fichero() -> str:
     try:
         with open(FILE, 'r') as fichero:
             while True:
-                linea = fichero.readline()
+                linea = fichero.readline(5_000_000)
                 if not linea:
                     break
                 set_de_productos.add(linea.split(",")[0].lower())

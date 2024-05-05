@@ -32,7 +32,7 @@ class File():
     def read_line(self) -> str:
         try:
             with open(self._path, 'r') as file:
-                return file.readline()
+                return file.readline(5_000_000)
         except Exception as ex:
             print("Error -> f.read_line ->", ex)
     

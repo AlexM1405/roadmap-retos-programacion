@@ -54,7 +54,7 @@ def files():
         print(file.read())
              
         # Lee una linea
-        print(file.readline())
+        print(file.readline(5_000_000))
         
         # Lee y genera una lista. Si leyo una linea anteriormente comienza desde donde quedo. Si ya se leyo el archivo completo, retorna una lista vacia.
         print(file.readlines())
