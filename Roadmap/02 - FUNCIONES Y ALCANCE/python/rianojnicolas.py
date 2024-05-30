@@ -1,4 +1,4 @@
-import random
+import secrets
 
 # Variable global y funcion ya creada por el lenguaje
 variableGlobal = "Paso por aca, a desearte muchos exitos!!!\n"
@@ -41,7 +41,7 @@ def functionInput():
 def playCompetition(optionPlayer):
     # Concepto de Variable Local
     optionList = ["piedra", "papel", "tijera"]
-    optionPC = random.choice(optionList)
+    optionPC = secrets.choice(optionList)
     print(f'la opcion del pc fue: {optionPC}\n')
     if (optionPC == optionPlayer):
         print("Emptados")

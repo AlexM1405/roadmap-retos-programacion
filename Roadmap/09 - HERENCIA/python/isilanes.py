@@ -1,5 +1,5 @@
-import random
 from abc import ABC, abstractmethod
+import secrets
 
 
 class Animal(ABC):
@@ -94,7 +94,7 @@ class Engineer(Employee):
 
     @staticmethod
     def guess_deadline() -> float:
-        return random.randrange(1, 1000)
+        return secrets.SystemRandom().randrange(1, 1000)
 
 
 class ProjectManager(Employee):

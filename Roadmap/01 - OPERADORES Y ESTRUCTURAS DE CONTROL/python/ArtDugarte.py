@@ -1,9 +1,9 @@
-import random;
+import secrets
 
 # --------------------------  TIPOS DE OPERADORES EN PYTHON -------------------------- 
 
-num1 = random.randint(1, 99);
-num2 = random.randint(1, 99);
+num1 = secrets.SystemRandom().randint(1, 99);
+num2 = secrets.SystemRandom().randint(1, 99);
 
 # Operadores aritméticos:
 
@@ -67,7 +67,7 @@ print(f"IDENTIDAD: {num1} is not {num2} = {num1 is not num2}" + "\n");
 print("-----------------OPERADORES DE PERTENENCIA-----------------" + "\n");
 
 # in
-Vector = [random.randint(1, 99) for i in range(10)]
+Vector = [secrets.SystemRandom().randint(1, 99) for i in range(10)]
 print(f"PERTENECE: {num1} in {Vector} = {num1 in Vector}" + "\n");
 
 # not in
@@ -96,8 +96,8 @@ print(f">>: {num1} >> {num2} = {num1 >> num2}" + "\n");
 # Operadores lógicos:
 print("-----------------OPERADORES LÓGICOS-----------------" + "\n");
 
-boolean1 = bool(random.randint(0, 1));
-boolean2 = bool(random.randint(0, 1));
+boolean1 = bool(secrets.SystemRandom().randint(0, 1));
+boolean2 = bool(secrets.SystemRandom().randint(0, 1));
 
 # and
 print(f"AND: {boolean1} and {boolean2} = {boolean1 and boolean2}" + "\n");
