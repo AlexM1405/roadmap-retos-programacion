@@ -28,6 +28,8 @@
 # Ejercicio
 
 # Definición de la clase Persona
+import secrets
+
 class Persona:
     # Inicializador (__init__) con atributos nombre y edad
     def __init__(self, nombre, edad):
@@ -54,7 +56,6 @@ class Persona:
 # Extra_1
 import sys
 import time
-import random
 from collections import  deque
 
 class Navigate():
@@ -157,7 +158,7 @@ def printer():
             if len(my_printer.print_queue) > 3:
                 printing = True
             else:
-                num = random.randint(1, 5)
+                num = secrets.SystemRandom().randint(1, 5)
                 if num % 2 != 0:
                     printing = True
             cont += 1

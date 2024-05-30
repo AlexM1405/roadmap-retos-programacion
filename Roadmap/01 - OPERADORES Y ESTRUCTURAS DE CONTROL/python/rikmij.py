@@ -4,14 +4,13 @@ Esta librería hay que instalarla, no viene incluída
 '''
 
 import colorama
+import secrets
 
 color_green = colorama.Fore.GREEN
 color_blue = colorama.Fore.BLUE
 color_grey = colorama.Fore.BLACK
 color_red = colorama.Fore.RED
 end_color = colorama.Fore.RESET
-
-import random
 
 print('-'*10, "OPERADORES ARITMÉTICOS", '-'*10)
 
@@ -107,7 +106,7 @@ for letra in word:
 print(len(count))
 
 print('*'*3, "EJERCICIO 3", '*'*3)
-chosen_number = random.randint(1, 30)
+chosen_number = secrets.SystemRandom().randint(1, 30)
 vidas = 5
 
 choose = None

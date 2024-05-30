@@ -27,8 +27,8 @@
 
 # Ejercicio
 import time
-import random
 from collections import  deque
+import secrets
 
 def ejercicio():
     stack_lifo = []
@@ -142,7 +142,7 @@ def impresora(cola_impresion):
             if len(cola_impresion) > 3:
                 imprimir = True
             else:
-                num = random.randint(1, 5)
+                num = secrets.SystemRandom().randint(1, 5)
                 if num % 2 != 0:
                     imprimir = True
             cont += 1

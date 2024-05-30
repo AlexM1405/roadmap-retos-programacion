@@ -1,7 +1,7 @@
 from datetime import datetime
-import random
 import functools
 from typing import Iterable, Final
+import secrets
 
 
 def date_format(date: datetime, format: str = "%A, %d de %B de %Y - %I:%M %p") -> str:
@@ -33,7 +33,7 @@ def available_date_formats() -> list[str]:
 
 
 def choice_random_elements[T](elements: Iterable[T], quantity: int) -> list[T]:
-    return random.sample(population=elements, k=quantity)
+    return secrets.SystemRandom().sample(population=elements, k=quantity)
 
 
 def display_formatted_date_in_various_ways(date: datetime, quantity: int = 10) -> None:

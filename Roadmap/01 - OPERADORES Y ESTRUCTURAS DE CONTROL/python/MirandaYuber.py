@@ -1,4 +1,4 @@
-import random
+import secrets
 
 print('######  OPERADORES_ARITMETICOS  ######')
 print(f'suma (1 + 1): {1 + 1}')
@@ -73,7 +73,7 @@ print()
 
 
 print('######  CONDICIONALES  ######')
-numeros = random.randint(-10, 10)
+numeros = secrets.SystemRandom().randint(-10, 10)
 print('Condicional if else:')
 if numeros > 0:
     print(f'El número {numeros} es positivo')
